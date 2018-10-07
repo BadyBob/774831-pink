@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-nav">
+        <a class="page-logo" href="#">
+          <img src="http://placehold.it/150x100" alt="Логотип PINK">
+        </a>
+        <button class="button page-nav_sandwich" type="button">Меню</button>
+        <ul class="page-nav__catalog">
+          <li><a class="page-nav__catalog_item" href="index.html" alt="Главная страница">Главная</a></li>
+          <li><span class="page-nav__catalog_curren">Фотографии</span></li>
+          <li><a class="page-nav__catalog_item" href="form.html" alt="Конкурс">Конкурс</a></li>
+          <li><a class="page-nav__catalog_item" href="https://htmlacademy.ru/">Html academy</a></li>
+        </ul>
+      </nav>
+      <h1 class="page-title">Фотографии пользователей</h1>
+    </header>
+    <main class="page-main">
+      <div class="photo-tape">
+        <p class="photo-tape__head">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photo-tape__panorama">
+          <img class="photo-tape__panorama_img" src="http://placehold.it/150x100">
+          <blockquote class="quote quote_photo">
+            <cite class="quote__user quote__user_photo">Анна</cite><span class="quote__data">(5 минут назад)</span>
+            <p class="quote__item quote__item_photo">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="quote__like">Нравится: 215</p>
+          </blockquote>
+        </div>
+        <div class="photo-tape__item">
+          <img class="photo-tape__item_img" src="http://placehold.it/150x100">
+          <blockquote class="quote quote_photo">
+            <cite class="quote__user quote__user_photo">Левон</cite><span class="quote__data">(5 часов назад)</span>
+            <p class="quote__item quote__item_photo">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="quote__like">Нравится: 356</p>
+          </blockquote>
+        </div>
+        <div class="photo-tape__item">
+          <img class="photo-tape__item_img" src="http://placehold.it/150x100">
+          <blockquote class="quote quote_photo">
+            <cite class="quote__user quote__user_photo">Антон</cite><span class="quote__data">(12 часов назад)</span>
+            <p class="quote__item quote__item_photo">Соседи будут рады!</p>
+            <p class="quote__like">Нравится: 666</p>
+          </blockquote>
+        </div>
+        <div class="photo-tape__item">
+          <img class="photo-tape__item_img" src="http://placehold.it/150x100">
+          <blockquote class="quote quote_photo">
+            <cite class="quote__user quote__user_photo">Борис</cite><span class="quote__data">(20 часов назад)</span>
+            <p class="quote__item quote__item_photo">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="quote__like">Нравится: 215</p>
+          </blockquote>
+        </div>
+        <div class="photo-tape__item">
+          <img class="photo-tape__item_img" src="http://placehold.it/150x100">
+          <blockquote class="quote quote_photo">
+            <cite class="quote__user quote__user_photo">Сергей</cite><span class="quote__data">(25 часов назад)</span>
+            <p class="quote__item quote__item_photo">Самая кубанская в мире!</p>
+            <p class="quote__like">Нравится: 4</p>
+          </blockquote>
+        </div>
+        <div class="photo-tape__item">
+          <img class="photo-tape__item_img" src="http://placehold.it/150x100">
+          <blockquote class="quote quote_photo">
+            <cite class="quote__user quote__user_photo">Максим</cite><span class="quote__data">(40 часов назад)</span>
+            <p class="quote__item quote__item_photo">Где снег-то</p>
+            <p class="quote__like">Нравится: 150</p>
+          </blockquote>
+        </div>
+        <div class="photo-tape__item">
+          <img class="photo-tape__item_img" src="http://placehold.it/150x100">
+          <blockquote class="quote quote_photo">
+            <cite class="quote__user quote__user_photo">Надежда</cite><span class="quote__data">(45 часов назад)</span>
+            <p class="quote__item quote__item_photo">Всем GM и взаимные лайки!</p>
+            <p class="quote__like">Нравится: 2560</p>
+          </blockquote>
+        </div>
+        <section class="photo-form">
+          <h2 class="visually-hidden">Форма размещения фотографии</h2>
+          <p class="photo-form__head">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <form class="photo-builder" action="https://echo.htmlacademy.ru" method="get">
+            <img class="photo-builder__item" src="http://placehold.it/150x100" alt="Ваша фотография">
+            <div class="photo-builder__toolbox">
+              <input class="photo-builder__checkbox" type="checkbox" name="photo-size" checked="">
+              <input class="photo-builder__checkbox" type="checkbox" name="photo-color">
+              <input class="photo-builder__checkbox" type="checkbox" name="photo-contrast">
+            </div>
+            <div class="photo-builder__range-wrapper">
+              <input class="photo-builder__range" type="range" min="1" max="10">
+            </div>
+            <div class="photo-builder__place">
+              <button class="button photo-builder__submit" type="submit">Запостить</button>
+              <button class="button photo-builder__reset" type="reset">Отмена</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer footer-not-main">
+      <div class=logo-wrapper>
+        <img class="logo-wrapper__pink" src="http://placehold.it/150x100">
+      </div>
+      <div class="social-button">
+        <a class="social-button__twitter" href="twitter.com">Твиттер</a>
+        <a class="social-button__facebook" href="facebook.com">Фейсбук</a>
+        <a class="social-button__youtube" href="youtube.com">Ютуб</a>
+      </div>
+      <div class="copyright">
+        <span class="copyright__developer">Разработано</span>
+        <a class="copyright__logo" href="https://htmlacademy.ru/profession/frontender">logo</a>
+      </div>
+    </footer>
+  </body>
+</html>
