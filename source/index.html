@@ -7,14 +7,14 @@
   <body>
     <header class="page-header">
       <nav class="page-nav">
-        <a class="page-logo" href="#">
+        <a class="page-logo">
           <img src="http://placehold.it/150x100" alt="Логотип PINK">
         </a>
         <button class="button page-nav__sandwich" type="button">
-        <span class="visually-hidden">Меню</span>
+          <span class="visually-hidden">Меню</span>
         </button>
         <ul class="page-nav__catalog">
-          <li><span class="page-nav__catalog-current">Главная</span></li>
+          <li><a class="page-nav__catalog-item">Главная</a></li>
           <li><a class="page-nav__catalog-item" href="photo.html">Фотографии</a></li>
           <li><a class="page-nav__catalog-item" href="form.html">Конкурс</a></li>
           <li><a class="page-nav__catalog-item" href="https://htmlacademy.ru/">Html academy</a></li>
@@ -22,10 +22,13 @@
       </nav>
       <div class="app-download">
         <a class="app-download__all-platforms" href="#">Скачать приложение</a>
-        <div class="app-download_wrapper">
-          <a class="app" href="#"><span class="app--ios visually-hidden">Apple</span></a>
-          <a class="app" href="#"><span class="app--android visually-hidden">Android</a>
-          <a class="app" href="#"><span class="app--windowsphone visually-hidden">Windows Phone</a>
+        <div class="app-download__wrapper">
+          <a class="app-download__item" href="#">
+            <span class="visually-hidden">Apple</span></a>
+          <a class="app-download__item" href="#">
+            <span class="visually-hidden">Android</a>
+          <a class="app-download__item" href="#">
+            <span class="visually-hidden">Windows Phone</a>
         </div>
         <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows 8</p>
       </div>
@@ -38,87 +41,138 @@
       <section class="offer">
         <h2 class="visually-hidden">Причины скачать приложение PINK</h2>
         <ul class="advantages-offer">
-          <li class="advantages-offer__list">
-            <h3 class="advantages-offer__list-item">Поднимает настроение</h3>
-            <p class="advantages-offer__list-item">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в&nbsp;несколько кликов!</p>
+          <li class="advantages-offer__item">
+            <h3 class="advantages-offer__item-head">Поднимает настроение</h3>
+            <p class="advantages-offer__item-body">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в&nbsp;несколько кликов!</p>
           </li>
-          <li class="advantages-offer__list">
-            <h3 class="advantages-offer__list-item">Меняет мир вокруг</h3>
-            <p class="advantages-offer__list-item">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="advantages-offer__item">
+            <h3 class="advantages-offer__item-head">Меняет мир вокруг</h3>
+            <p class="advantages-offer__item-body">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantages-offer__list">
-            <h3 class="advantages-offer__list-item">Заводит новых друзей</h3>
-            <p class="advantages-offer__list-item">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
+          <li class="advantages-offer__item">
+            <h3 class="advantages-offer__item-head">Заводит новых друзей</h3>
+            <p class="advantages-offer__item-body">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
           </li>
         </ul>
         <div class="offer-img-wrapper">
           <img class="offer-img-item" src="http://placehold.it/150x100" alt="Картинка с приветсвием">
         </div>
       </section>
+
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="reviews__wrapper">
-          <blockquote class="quote quote_index">
-            <cite class="quote__user quote__user_index">Николай Петров</cite>
-            <p class="quote__item quote__item_index">Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
-          </blockquote>
-          <blockquote class="quote quote_index">
-            <cite class="quote__user quote__user_index">Николай Петров</cite>
-            <p class="quote__item quote__item_index">Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
-          </blockquote>
-          <blockquote class="quote quote_index">
-            <cite class="quote__user quote__user_index">Николай Петров</cite>
-            <p class="quote__item quote__item_index">Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
-          </blockquote>
-        </div>
-        <div class="slider">
-          <button class="slider__item" type="button">1</button>
-          <button class="slider__item" type="button">2</button>
-          <button class="slider__item" type="button">3</button>
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list  slider__list">
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
+            </blockquote>
+            <blockquote class="reviews__item  slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
+            </blockquote>
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </p>
         </div>
       </section>
+
       <section class="rates">
-        <h2 class="visually-hidden">Тарифы</h2>
-        <div class="advert">
-          <h3 class="advert__head">Стандарт&nbsp;3,99&nbsp;USD</h3>
-          <ul class="advert__list">
-            <li><span class="advert__list_item">Розовый фильтр</span></li>
-            <li><span class="advert__list_item">Смайлик</span></li>
-            <li><span class="advert__list_item">Комментарии</span></li>
-          </ul>
-        </div>
-        <div class="advert">
-          <h3 class="advert__head">Стандарт&nbsp;3,99&nbsp;USD</h3>
-          <ul class="advert__list">
-            <li><span class="advert__list_item">Розовый фильтр</span></li>
-            <li><span class="advert__list_item">Смайлик</span></li>
-            <li><span class="advert__list_item">Комментарии</span></li>
-          </ul>
-        </div>
-        <div class="advert">
-          <h3 class="advert__head">Стандарт&nbsp;3,99&nbsp;USD</h3>
-          <ul class="advert__list">
-            <li><span class="advert__list_item">Розовый фильтр</span></li>
-            <li><span class="advert__list_item">Смайлик</span></li>
-            <li><span class="advert__list_item">Комментарии</span></li>
-          </ul>
-        </div>
-        <div class="slider">
-          <button class="slider__item" type="button">1</button>
-          <button class="slider__item" type="button">2</button>
-          <button class="slider__item" type="button">3</button>
+        <div class="rates__wrapper slider">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <div class="advert__list slider__list">
+            <div class="advert__item slider__item">
+              <h3 class="advert__title">Стандарт</h3>
+              <p class="advert__price">3,99&nbsp;USD</p>
+              <ul class="advert__service">
+                <li class="advert__offer">Розовый фильтр
+                  <span class="advert__offer--consent">да</span>
+                </li>
+                <li class="advert__offer">Смайлик
+                  <span class="advert__offer--consent">да</span>
+                </li>
+                <li class="advert__offer">Комментарии
+                  <span class="advert__offer--ban">Нет</span>
+                </li>
+              </ul>
+            </div>
+            <div class="advert__item slider__item">
+              <h3 class="advert__title">Стандарт</h3>
+              <p class="advert__price">3,99&nbsp;USD</p>
+              <ul class="advert__service">
+                <li class="advert__offer">Розовый фильтр
+                  <span class="advert__offer--consent">да</span>
+                </li>
+                <li class="advert__offer">Смайлик
+                  <span class="advert__offer--consent">да</span>
+                </li>
+                <li class="advert__offer">Комментарии
+                  <span class="advert__offer--ban">Нет</span>
+                </li>
+              </ul>
+              <span class="hit">хит</span>
+            </div>
+            <div class="advert__item slider__item">
+              <h3 class="advert__title">Стандарт</h3>
+              <p class="advert__price">3,99&nbsp;USD</p>
+              <ul class="advert__service">
+                <li class="advert__offer">Розовый фильтр
+                  <span class="advert__offer--consent">да</span>
+                </li>
+                <li class="advert__offer">Смайлик
+                  <span class="advert__offer--consent">да</span>
+                </li>
+                <li class="advert__offer">Комментарии
+                  <span class="advert__offer--ban">Нет</span>
+                </li>
+              </ul>
+            </div>
+            <button class="reviews__prev" type="button">Предыдущий тариф</button>
+            <button class="reviews__next" type="button">Следующий тариф</button>
+          </div>
+          <div class="slider">
+            <button class="slider__item" type="button">1</button>
+            <button class="slider__item" type="button">2</button>
+            <button class="slider__item" type="button">3</button>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer main-footer">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p>Остались вопросы?</p>
-      <p>Свяжитесь с&nbsp;нами!</p>
-      <ul class="feedback">
-        <li><span class="feedback__head">Звоните</span> <address class="feedback__item">+7(812)555-66-66</address></li>
-        <li><span class="feedback__head">Пишите</span> <address class="feedback__item">mail@htmlacademy.ru</address></li>
-        <li><span class="feedback__head">Приезжайте в&nbsp;гости</span> <address class="feedback__item">ул. Большая Конюшенная, 19/8</address></li>
-      </ul>
+    <footer class="page-footer page-footer--main">
+      <div class="page-footer__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>Остались вопросы?</p>
+        <p>Свяжитесь с&nbsp;нами!</p>
+        <ul class="feedback">
+          <li class="feedback__head">
+            <p class="feedback__item-title">Звоните</p>
+            <a class="feedback__item" href="tel:+78125556666">+7(812)555-66-66</a>
+          </li>
+          <li class="feedback__head">
+            <p class="feedback__item-title">Пишите</p>
+            <a class="feedback__item" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="feedback__head">
+            <p class="feedback__item-title">Приезжайте в&nbsp;гости</p>
+            <a class="feedback__item" href="#">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
