@@ -1,0 +1,36 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+
+  line-height: 24px;
+  min-width: 320px;
+  background-color: $bg-white;
+  margin: 0 auto;
+  padding: 0;
+  color: $dark-blue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+}

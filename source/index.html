@@ -3,44 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>HTML&nbsp;Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="page-nav">
-        <a class="page-logo">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo">
           <img src="http://placehold.it/150x100" alt="Логотип PINK">
         </a>
-        <button class="button-menu page-nav__sandwich" type="button">
+        <button class="button-menu nav__toggle" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
-        <ul class="page-nav__catalog">
-          <li><a class="page-nav__catalog-item">Главная</a></li>
-          <li><a class="page-nav__catalog-item" href="photo.html">Фотографии</a></li>
-          <li><a class="page-nav__catalog-item" href="form.html">Конкурс</a></li>
-          <li><a class="page-nav__catalog-item" href="https://htmlacademy.ru/">Html academy</a></li>
+        <ul class="nav__list">
+          <li><a class="nav__item nav__item--active">Главная</a></li>
+          <li><a class="nav__item" href="photo.html">Фотографии</a></li>
+          <li><a class="nav__item" href="form.html">Конкурс</a></li>
+          <li><a class="nav__item" href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
       </nav>
-      <div class="app-download">
-        <a class="app-download__all-platforms" href="#">Скачать приложение</a>
-        <div class="app-download__wrapper">
-          <a class="app-download__item" href="#">
+      <div class="app">
+        <a class="app__all-platforms" href="#">Скачать приложение</a>
+        <div class="app__wrapper">
+          <a class="app__item" href="#">
             <span class="visually-hidden">Apple</span>
           </a>
-          <a class="app-download__item" href="#">
+          <a class="app__item" href="#">
             <span class="visually-hidden">Android</span>
           </a>
-          <a class="app-download__item" href="#">
+          <a class="app__item" href="#">
             <span class="visually-hidden">Windows Phone</span>
           </a>
         </div>
-        <p class="app-download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows 8</p>
+        <p class="app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows 8</p>
       </div>
     </header>
 
-    <main class="page-main">
-      <div class="page-main__slogan">
-        <p class="page-main__slogan-item">Устали от&nbsp;серости мегаполиса?</p>
-        <p class="page-main__slogan-item">Нам есть, что вам предложить!</p>
+    <main class="main">
+      <h1 class="visually-hidden">Сайт приложения PINK</h1>
+      <div class="main__promo">
+        <p class="main__promo-item">Устали от&nbsp;серости мегаполиса?</p>
+        <p class="main__promo-item">Нам есть, что вам предложить!</p>
       </div>
       <section class="offer">
         <h2 class="visually-hidden">Причины скачать приложение PINK</h2>
@@ -59,7 +62,7 @@
           </li>
         </ul>
         <div class="offer-img-wrapper">
-          <img class="offer-img-item" src="http://placehold.it/150x100" alt="Картинка с приветсвием">
+          <img class="offer-img-item" src="../img/iphone-screen-3-desktop@1x.png" alt="Картинка с приветсвием">
         </div>
       </section>
 
@@ -170,11 +173,11 @@
       </section>
     </main>
 
-    <footer class="page-footer page-footer--main">
-      <div class="page-footer__wrapper">
+    <footer class="footer footer--main">
+      <div class="footer__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <p>Остались вопросы?</p>
-        <p>Свяжитесь с&nbsp;нами!</p>
+        <p class="footer__slogan">Остались вопросы?</p>
+        <p class="footer__slogan">Свяжитесь с&nbsp;нами!</p>
         <ul class="feedback">
           <li class="feedback__head">
             <p class="feedback__item-title">Звоните</p>

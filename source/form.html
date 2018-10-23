@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML&nbsp;Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="page-nav">
-        <a class="page-logo" href="#">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="#">
           <img src="http://placehold.it/150x100" alt="Логотип PINK">
         </a>
-        <button class="button-menu page-nav-sandwich" type="button">
+        <button class="button-menu nav__toggle" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
-        <ul class="page-nav__catalog">
-          <li><a class="page-nav__catalog-item" href="index.html">Главная</a></li>
-          <li><a class="page-nav__catalog-item" href="photo.html">Фотографии</a></li>
-          <li><span class="page-nav__catalog-current">Конкурс</span></li>
-          <li><a class="page-nav__catalog-item" href="https://htmlacademy.ru/">Html academy</a></li>
+        <ul class="nav__list">
+          <li><a class="nav__item" href="index.html">Главная</a></li>
+          <li><a class="nav__item" href="photo.html">Фотографии</a></li>
+          <li><a class="nav__item nav__item--active">Конкурс</a></li>
+          <li><a class="nav__item" href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
       </nav>
-      <h1 class="page-title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
+      <h1 class="title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
     </header>
-    <main class="page-main">
+    <main class="main">
       <p class="tagline">Поделитесь своей историе и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
       <form class="form" method="post" >
         <fieldset class="form__set">
@@ -107,7 +109,7 @@
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="footer">
       <div class=logo-wrapper>
         <img class="logo-wrapper__pink" src="http://placehold.it/150x100" alt="Логотип PINK">
       </div>

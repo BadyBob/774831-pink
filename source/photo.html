@@ -3,30 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML&nbsp;Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="page-nav">
-        <a class="page-logo" href="#">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="#">
           <img src="http://placehold.it/150x100" alt="Логотип PINK">
         </a>
-        <button class="button-menu page-nav-sandwich" type="button">
+        <button class="button-menu nav__toggle" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
-        <ul class="page-nav__catalog">
-          <li><a class="page-nav__catalog-item" href="index.html">Главная</a></li>
-          <li><span class="page-nav__catalog-current">Фотографии</span></li>
-          <li><a class="page-nav__catalog-item" href="form.html">Конкурс</a></li>
-          <li><a class="page-nav__catalog-item" href="https://htmlacademy.ru/">Html academy</a></li>
+        <ul class="nav__list">
+          <li><a class="nav__item" href="index.html">Главная</a></li>
+          <li><a class="nav__item nav__item--active">Фотографии</a></li>
+          <li><a class="nav__item" href="form.html">Конкурс</a></li>
+          <li><a class="nav__item" href="https://htmlacademy.ru/">Html academy</a></li>
         </ul>
       </nav>
-      <h1 class="page-title">Фотографии пользователей</h1>
+      <h1 class="main-title">Фотографии пользователей</h1>
     </header>
-    <main class="page-main">
-      <div class="page-main__wrapper">
+    <main class="main">
+      <div class="main__wrapper">
         <div class="photo-list photo-wrapper">
           <p class="photo-list__head">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?</p>
-          <div class="photo photo--panorama">
+          <div class="photo photo-list__item">
             <img class="photo__item-img" src="http://placehold.it/150x100" alt="Панорама дня">
             <blockquote class="photo__post">
               <div class="photo__post-head-wrapper">
@@ -35,11 +37,13 @@
               </div>
               <p class="photo__post-item">Прыгать или нет? Напишите в&nbsp;коментарии свой совет и&nbsp;смотрите прямую трансляцию в&nbsp;перископе, задавайте свои вопросы!</p>
               <p class="photo__post-voters">
-                <button class="photo__post-voters--like" type="button">Лайк</button>Нравится: 215
+                <button class="photo__post-voters-like" type="button">
+                  <span class="visually-hidden">Лайк</span>
+                </button>Нравится: 215
               </p>
             </blockquote>
           </div>
-          <div class="photo">
+          <div class="photo photo-list__item">
             <img class="photo__item-img" src="http://placehold.it/150x100" alt="Фото">
             <blockquote class="photo__post">
               <div class="photo__post-head-wrapper">
@@ -48,11 +52,13 @@
               </div>
               <p class="photo__post-item">Вчера он&nbsp;на&nbsp;луну летал, сегодня в&nbsp;руки к&nbsp;нам попал.</p>
               <p class="photo__post-voters">
-                <button class="photo__post-voters--like" type="button">Лайк</button>Нравится: 356
+                <button class="photo__post-voters-like" type="button">
+                  <span class="visually-hidden">Лайк</span>
+                </button>Нравится: 356
               </p>
             </blockquote>
           </div>
-          <div class="photo">
+          <div class="photo photo-list__item">
             <img class="photo__item-img" src="http://placehold.it/150x100" alt="Фото">
             <blockquote class="photo__post">
               <div class="photo__post-head-wrapper">
@@ -61,11 +67,13 @@
               </div>
               <p class="photo__post-item">Соседи будут рады!</p>
               <p class="photo__post-voters">
-                <button class="photo__post-voters--like" type="button">Лайк</button>Нравится: 666
+                <button class="photo__post-voters-like" type="button">
+                  <span class="visually-hidden">Лайк</span>
+                </button>Нравится: 666
               </p>
             </blockquote>
           </div>
-          <div class="photo">
+          <div class="photo photo-list__item">
             <img class="photo__item-img" src="http://placehold.it/150x100" alt="Фото">
             <blockquote class="photo__post">
               <div class="photo__post-head-wrapper">
@@ -74,11 +82,13 @@
               </div>
               <p class="photo__post-item">Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
               <p class="photo__post-voters">
-                <button class="photo__post-voters--like" type="button">Лайк</button>Нравится: 215
+                <button class="photo__post-voters-like" type="button">
+                  <span class="visually-hidden">Лайк</span>
+                </button>Нравится: 215
               </p>
             </blockquote>
           </div>
-          <div class="photo">
+          <div class="photo photo-list__item">
             <img class="photo__item-img" src="http://placehold.it/150x100" alt="Фото">
             <blockquote class="photo__post">
               <div class="photo__post-head-wrapper">
@@ -87,11 +97,13 @@
               </div>
               <p class="photo__post-item">Самая кубанская в&nbsp;мире!</p>
               <p class="photo__post-voters">
-                <button class="photo__post-voters--like" type="button">Лайк</button>Нравится: 4
+                <button class="photo__post-voters-like" type="button">
+                  <span class="visually-hidden">Лайк</span>
+                </button>Нравится: 4
               </p>
             </blockquote>
           </div>
-          <div class="photo">
+          <div class="photo photo-list__item">
             <img class="photo__item-img" src="http://placehold.it/150x100" alt="Фото">
             <blockquote class="photo__post">
               <div class="photo__post-head-wrapper">
@@ -100,11 +112,13 @@
               </div>
               <p class="photo__post-item">Где снег-то</p>
               <p class="photo__post-voters">
-                <button class="photo__post-voters--like" type="button">Лайк</button>Нравится: 150
+                <button class="photo__post-voters-like" type="button">
+                  <span class="visually-hidden">Лайк</span>
+                </button>Нравится: 150
               </p>
             </blockquote>
           </div>
-          <div class="photo">
+          <div class="photo photo-list__item">
             <img class="photo__item-img" src="http://placehold.it/150x100" alt="Фото">
             <blockquote class="photo__post">
               <div class="photo__post-head-wrapper">
@@ -113,7 +127,9 @@
               </div>
               <p class="photo__post-item">Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
               <p class="photo__post-voters">
-                <button class="photo__post-voters--like" type="button">Лайк</button>Нравится: 2560
+                <button class="photo__post-voters-like" type="button">
+                  <span class="visually-hidden">Лайк</span>
+                </button>Нравится: 2560
               </p>
             </blockquote>
           </div>
@@ -139,14 +155,14 @@
               <input class="photo-builder__range" type="range" min="1" max="10">
             </div>
             <div class="photo-builder__place">
-              <button class="button photo-builder--submit" type="submit">Запостить</button>
-              <button class="button photo-builder--negative" type="reset">Отмена</button>
+              <button class="button-primary photo-builder__btn-submit" type="submit">Запостить</button>
+              <button class="button-primary--negative photo-builder__btn-reset" type="reset">Отмена</button>
             </div>
           </form>
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="footer">
       <div class=logo-wrapper>
         <img class="logo-wrapper__pink" src="http://placehold.it/150x100" alt="Логотип PINK">
       </div>

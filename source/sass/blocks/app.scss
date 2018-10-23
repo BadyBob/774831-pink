@@ -1,0 +1,35 @@
+.app {
+  background-color: $bg-app;
+}
+
+.app__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.app__all-platforms {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $text-white;
+  text-decoration: none;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 27.5px;
+  cursor: pointer;
+}
+
+.app__all-platforms:hover {
+  background-color: $bg-white;
+  color: $a-nav-hover;
+}
+
+.app__all-platforms:active {
+  background-color: $bg-white;
+  color: $a-nav-active;
+}
+
+.app__info {
+  color: $text-white;
+}
